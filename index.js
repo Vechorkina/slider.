@@ -17,6 +17,14 @@ downBtn.addEventListener("click", () => {
   shangeSlide("down");
 });
 
+document.addEventListener("keydown", event => {
+  if (event.key === "ArrowUp") {
+    shangeSlide("up");
+  } else if (event.key === "ArrowDown") {
+    shangeSlide("down");
+  }
+});
+
 function shangeSlide(direction) {
   if (direction === "up") {
     activeSlideIndex++;
