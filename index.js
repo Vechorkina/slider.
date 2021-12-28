@@ -16,7 +16,7 @@ upBtn.addEventListener("click", () => {
 downBtn.addEventListener("click", () => {
   shangeSlide("down");
 });
-
+//управление кнопками (вверх, вниз)
 document.addEventListener("keydown", event => {
   if (event.key === "ArrowUp") {
     shangeSlide("up");
